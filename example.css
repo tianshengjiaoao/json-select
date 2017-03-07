@@ -1,4 +1,6 @@
 body {
+	margin-top: 200px;
+	text-align: center;
 	font-family: sans-serif;
 }
 /*set size*/
@@ -20,6 +22,10 @@ body {
 }
 /*set focus style*/
 .pure-css-dropdown >input:focus {
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	border-color: #999;
 	color: #333;
 }
