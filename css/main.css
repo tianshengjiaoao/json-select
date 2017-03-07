@@ -29,7 +29,7 @@ input {
 	display: block;
 	position: absolute;
 	width: 0;
-    height: 0;
+	height: 0;
 	border-radius: 2px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
