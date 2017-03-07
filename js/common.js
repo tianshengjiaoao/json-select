@@ -1,4 +1,4 @@
-function pureCcssDropdown(el){
+function pureCssDropdown(el){
 	this.dropdown = document.getElementById(el);
 	var dropdown = this.dropdown;
 	var dropdownTitle = dropdown.getElementsByTagName("input")[0];
