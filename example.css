@@ -1,0 +1,44 @@
+body {
+	font-family: sans-serif;
+}
+/*set size*/
+.pure-css-dropdown {
+	width: 200px;
+	height: 40px;
+}
+/*set default style*/
+.pure-css-dropdown >input{
+	background: linear-gradient(-180deg, #fff 0%, #eee 100%);
+}
+/*set hover style*/
+.pure-css-dropdown >input:hover {
+	background: linear-gradient(-180deg, #eee 0%, #fff 100%);
+}
+/*set active style*/
+.pure-css-dropdown >input:active {
+	background: linear-gradient(-180deg, #fff 0%, #eee 100%);
+}
+/*set focus style*/
+.pure-css-dropdown >input:focus {
+	border-color: #999;
+	color: #333;
+}
+/*set list size*/
+.pure-css-dropdown >ul {
+}
+/*set list style*/
+.pure-css-dropdown >ul>li {
+}
+/*set list hover style*/
+.pure-css-dropdown >ul >li:hover {
+	background: #2485FF;
+	color: #fff;
+}
+/*set animation*/
+.animation {
+	animation: 0.5s animation forwards;
+}
+@keyframes animation {
+	0% { opacity: 0; top: 20px;}
+	100% { opacity: 1; top: 50px;}
+}
