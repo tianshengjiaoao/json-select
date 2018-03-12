@@ -7,7 +7,7 @@ function getJson(element,jsonUrl){
 	element.click(function(){
 		select_list.html("");
 		select_content.toggle();
-		loading_box.toggle();
+		loading_box.show();
 		$.ajax({
 			url: jsonUrl,
 			success: function(data){
