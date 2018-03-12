@@ -1,0 +1,104 @@
+.loading_box {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+.loading {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+.loading_path {
+	left: 8px;
+	position: absolute;
+	width: 2px;
+	height: 18px;
+	&:before {
+	content: "";
+	display: block;
+	width: 2px;
+	height: 4px;
+	-moz-border-radius: 1px;
+	     border-radius: 1px;
+	background: #333;
+	}
+}
+@mixin loading_rotate($deg) {
+	opacity: 0;
+	transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+}
+@mixin delaytime($delaytime) {
+	-moz-animation:loadinganimation 1.2s linear $delaytime infinite;
+	     animation:loadinganimation 1.2s linear $delaytime infinite;
+	-webkit-animation:loadinganimation 1.2s linear $delaytime infinite;
+}
+@-webkit-keyframes loadinganimation {
+	from {opacity:1;}
+	to {opacity:0;}
+}
+@-moz-keyframes loadinganimation {
+	from {opacity:1;}
+	to {opacity:0;}
+}
+@keyframes loadinganimation {
+	from {opacity:1;}
+	to {opacity:0;}
+}
+.rotate1 {
+	@include loading_rotate(0deg);
+	@include delaytime(0s);
+}
+.rotate2 {
+	@include loading_rotate(30deg);
+	@include delaytime(0.1s);
+}
+.rotate3 {
+	@include loading_rotate(60deg);
+	@include delaytime(0.2s);
+}
+.rotate4 {
+	@include loading_rotate(90deg);
+	@include delaytime(0.3s);
+}
+.rotate5 {
+	@include loading_rotate(120deg);
+	@include delaytime(0.4s);
+}
+.rotate6 {
+	@include loading_rotate(150deg);
+	@include delaytime(0.5s);
+}
+.rotate7 {
+	@include loading_rotate(180deg);
+	@include delaytime(0.6s);
+}
+.rotate8 {
+	@include loading_rotate(210deg);
+	@include delaytime(0.7s);
+}
+.rotate9 {
+	@include loading_rotate(240deg);
+	@include delaytime(0.8s);
+}
+.rotate10 {
+	@include loading_rotate(270deg);
+	@include delaytime(0.9s);
+}
+.rotate11 {
+	@include loading_rotate(300deg);
+	@include delaytime(1s);
+}
+.rotate12 {
+	@include loading_rotate(330deg);
+	@include delaytime(1.1s);
+}

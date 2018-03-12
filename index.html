@@ -2,41 +2,64 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>pure-css-dropdown</title>
+	<title>select</title>
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="example.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
-	<ul id="dropdown" class="pure-css-dropdown">
-		<input type="" name="" value="please select" readonly="true">
-		<ul>
-			<li>please select</li>
-			<li>apple</li>
-			<li>orange</li>
-			<li>peach</li>
-		</ul>
-	</ul>
+	<div style="width: 500px; margin: 0 auto; text-align: center; margin-top: 100px;">
+		<div class="select" id="a">
+			<div class="select_selected">select</div>
+			<div class="select_content">
+				<div class="loading_box">
+					<div class="loading">
+						<div class="loading_path rotate1"></div>
+						<div class="loading_path rotate2"></div>
+						<div class="loading_path rotate3"></div>
+						<div class="loading_path rotate4"></div>
+						<div class="loading_path rotate5"></div>
+						<div class="loading_path rotate6"></div>
+						<div class="loading_path rotate7"></div>
+						<div class="loading_path rotate8"></div>
+						<div class="loading_path rotate9"></div>
+						<div class="loading_path rotate10"></div>
+						<div class="loading_path rotate11"></div>
+						<div class="loading_path rotate12"></div>
+					</div>
+				</div>
+				<ul class="select_list">
+				</ul>
+			</div>
+		</div>
 
-	<ul id="dropdown1" class="pure-css-dropdown">
-		<input type="" name="" value="please select" readonly="true">
-		<ul>
-			<li>please select</li>
-			<li>apple</li>
-			<li>orange</li>
-			<li>peach</li>
-		</ul>
-	</ul>
-
-	<ul id="dropdown2" class="pure-css-dropdown">
-		<input type="" name="" value="please select" readonly="true">
-		<ul>
-			<li>please select</li>
-			<li>apple</li>
-			<li>orange</li>
-			<li>peach</li>
-		</ul>
-	</ul>
-	<script src="./js/common.js"></script>
-	<script src="./example.js"></script>
+		<div class="select" id="b">
+			<div class="select_selected">loading</div>
+			<div class="select_content" style="display: block;">
+				<div class="loading_box" style="display: block;">
+					<div class="loading">
+						<div class="loading_path rotate1"></div>
+						<div class="loading_path rotate2"></div>
+						<div class="loading_path rotate3"></div>
+						<div class="loading_path rotate4"></div>
+						<div class="loading_path rotate5"></div>
+						<div class="loading_path rotate6"></div>
+						<div class="loading_path rotate7"></div>
+						<div class="loading_path rotate8"></div>
+						<div class="loading_path rotate9"></div>
+						<div class="loading_path rotate10"></div>
+						<div class="loading_path rotate11"></div>
+						<div class="loading_path rotate12"></div>
+					</div>
+				</div>
+				<ul class="select_list">	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="./js/main.js"></script>
+	<script>
+		var a = new getJson($("#a"),"./json/demo.json")
+	</script>
 </body>
 </html>
