@@ -51,9 +51,9 @@
 ##### 3、配置js
 
 ```html
-	<script>
-		var a = new getJson($("#a"),"./json/demo.json")
-	</script>
+<script>
+    var a = new getJson($("#a"),"./json/demo.json")
+</script>
 ```
 
 
